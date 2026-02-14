@@ -2,9 +2,9 @@
 
 This is a powerful, client-side React application that converts any image into a professional-grade, printable paint-by-number template. It runs entirely in your browser (no data upload required) and features advanced algorithms for color matching, region smoothing, and high-resolution vector export.
 
-## ✨ Features
+## Features
 
-### 🎨 Advanced Color Engine
+### Advanced Color Engine
 - **Multi-Palette Support:** Mix and match from popular paint sets or use them all at once:
     - Arteza Gouache (24, 36, 60)
     - Liquitex Basics Acrylic (24)
@@ -19,7 +19,7 @@ This is a powerful, client-side React application that converts any image into a
         - **De-speckle:** Removes noise and tiny islands.
         - **Edge Smoothing:** "Sands down" jagged pixel corners for organic, paintable shapes.
 
-### 🖨️ Professional Print Export
+### Professional Print Export
 - **High-Resolution Output:** Generates crisp, vector-traced lines at 300 DPI for any size.
 - **Standard Print Sizes:** Supports layouts from Letter (8.5x11") up to Poster sizes (24x32").
 - **Smart Labeling System:**
@@ -30,7 +30,24 @@ This is a powerful, client-side React application that converts any image into a
 - **Template Customization:** Adjust line darkness and number visibility to suit your vision.
 - **Palette Legend:** Optionally include a printable color key directly on the downloaded template.
 
-## 🚀 Getting Started
+## Usage Tips
+
+**1. Privacy First**
+Everything runs 100% in your browser. No images are uploaded to any server, and no AI is used. It's just raw code processing your pixels locally.
+
+**2. Use Your Own Supplies**
+Don't buy new paints!
+1. Paint a small swatch card of the colors you already own (paints, colored pencils, markers).
+2. Take a photo of it.
+3. In the app, click **"Add Custom Palette"** -> **"From Photo"**.
+4. Use the eyedropper to pick your exact colors.
+5. Generate a template that matches your existing kit perfectly.
+
+**3. Printing Advice**
+- **Home Printer:** Use cardstock or cheap watercolor paper cut to size (8.5x11") for a better painting experience than standard copy paper.
+- **Print Shop:** Select a larger size (like 16x20") in the app, download the high-res template, and take the file to a local print shop for a poster-sized project.
+
+## Getting Started
 
 ### Docker (Recommended)
 The easiest way to run the application locally is with Docker.
@@ -59,17 +76,8 @@ Open `http://localhost:8080` in your browser.
     npm run build
     ```
 
-## 📦 Deployment
+## Deployment
 
-This repository is configured to deploy automatically to **GitHub Pages** or any static host.
+This repository is configured to deploy automatically to **GitHub Pages**.
 
-The `vite.config.js` is set to use relative paths (`base: './'`), making it compatible with:
-- GitHub Pages (Project sites)
-- Docker containers (Root path)
-- S3 / Netlify / Vercel
-
-### GitHub Pages
-1. Go to `Settings` -> `Pages` in your GitHub repository.
-2. Ensure the source is set to **GitHub Actions**.
-3. Push changes to the `main` branch.
-4. The workflow in `.github/workflows/deploy.yml` will handle the rest!
+https://paintbynumber.handsomezebra.com/
