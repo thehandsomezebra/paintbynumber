@@ -1281,12 +1281,7 @@ export default function App() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10 print:hidden">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="bg-indigo-600 p-2 rounded-lg text-white">
-              <Palette size={20} />
-            </div>
-            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
-              PBN Generator
-            </h1>
+            <span className="text-3xl">🖌️</span>
           </div>
           <div className="flex items-center gap-4">
             <button 
